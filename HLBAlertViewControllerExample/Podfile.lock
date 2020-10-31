@@ -1,0 +1,23 @@
+PODS:
+  - HLBAlertViewController (0.0.1)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - HLBAlertViewController (from `../`)
+  - Masonry (~> 1.1.0)
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - Masonry
+
+EXTERNAL SOURCES:
+  HLBAlertViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HLBAlertViewController: d1962a828419f32837871a7fe204c29e0c222e6e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: dbdd09dfe58a3a83b2c92da4b22be291984e71df
+
+COCOAPODS: 1.9.3
