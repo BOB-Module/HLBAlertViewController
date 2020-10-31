@@ -1,5 +1,9 @@
 # HLBAlertViewController
 
+## 动态示例
+
+<img src="./media/HLBAlertViewControllerExample.gif" width="50%" height="50%">
+
 ## 编写初衷
 
 `UIAlertController` 的页面难以自定义。
