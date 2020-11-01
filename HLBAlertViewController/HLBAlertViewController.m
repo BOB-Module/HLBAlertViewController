@@ -36,11 +36,15 @@
     
     self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
     self.delegate = self;
-    
+
+    // 虽然本类已给出默认实现, 但还是依照惯例做判断, 如果哪天又删了默认实现, 此判断就能用上了. (健壮性)
     if (![self.delegate respondsToSelector:@selector(customizedAlertView)]) {
-        NSAssert(NO, @"子类必须 override `-alertView` 方法");
+        NSAssert(NO, @"子类必须 override `customizedAlertView:` 方法");
     } else {
         self.alertView = [self.delegate customizedAlertView];
+        if (!self.alertView) {
+            NSAssert(NO, @"`customizedAlertView:` 方法的返回值不能为 nil");
+        }
         self.alertView.transform = CGAffineTransformMakeScale(self.makeScaleValue, self.makeScaleValue);
         if (self.enableVerticalTranslateAnimation) {
             self.alertView.transform = CGAffineTransformTranslate(self.alertView.transform, 0, self.verticalTranslateValue);            
@@ -56,6 +60,14 @@
             }];
         });
     }
+}
+
+#pragma mark - HLBAlertViewControllerDelegate
+
+// 默认实现什么也不干, 只为了消除没实现代理方法的 Warning.
+// 子类需要 override 此代理方法
+- (HLBAlertView *)customizedAlertView {
+    return nil;
 }
 
 @end

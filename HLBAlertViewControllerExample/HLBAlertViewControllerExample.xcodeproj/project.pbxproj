@@ -14,6 +14,7 @@
 		717D623F252D7F9E001839FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 717D623E252D7F9E001839FB /* main.m */; };
 		717D6279252DE2ED001839FB /* MyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 717D6278252DE2ED001839FB /* MyAlertView.m */; };
 		717D627D252DE2FC001839FB /* MyAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717D627C252DE2FC001839FB /* MyAlertViewController.m */; };
+		71EF61DE254EA2D30083A950 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 71EF61DD254EA2D30083A950 /* CHANGELOG.md */; };
 		85DAFD2DACC1BB6F66FEFE1A /* libPods-HLBAlertViewControllerExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C803D0B9883E5CFB0359727 /* libPods-HLBAlertViewControllerExample.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		717D6278252DE2ED001839FB /* MyAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAlertView.m; sourceTree = "<group>"; };
 		717D627B252DE2FC001839FB /* MyAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAlertViewController.h; sourceTree = "<group>"; };
 		717D627C252DE2FC001839FB /* MyAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAlertViewController.m; sourceTree = "<group>"; };
+		71EF61DD254EA2D30083A950 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../../HLBInAppPush/CHANGELOG.md; sourceTree = "<group>"; };
 		A5118BCCEFBC4962DACBE332 /* Pods-HLBAlertViewControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLBAlertViewControllerExample.release.xcconfig"; path = "Target Support Files/Pods-HLBAlertViewControllerExample/Pods-HLBAlertViewControllerExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 		717D6220252D7F9D001839FB = {
 			isa = PBXGroup;
 			children = (
+				71EF61DD254EA2D30083A950 /* CHANGELOG.md */,
 				717D622B252D7F9D001839FB /* HLBAlertViewControllerExample */,
 				717D622A252D7F9D001839FB /* Products */,
 				9318CAD6D5DEFD45394BA60B /* Pods */,
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				717D623C252D7F9E001839FB /* LaunchScreen.storyboard in Resources */,
+				71EF61DE254EA2D30083A950 /* CHANGELOG.md in Resources */,
 				717D6239252D7F9E001839FB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
